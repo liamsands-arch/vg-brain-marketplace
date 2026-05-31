@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "vg-brain": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://vg-brain.com/mcp"
+      ]
+    }
+  }
+}

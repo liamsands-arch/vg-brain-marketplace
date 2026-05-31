@@ -1,0 +1,17 @@
+{
+  "name": "vg-brain",
+  "description": "VG Brain — layered company brain for Voyageur Group: RBAC, audit log, full-text search, draft-by-default writes, plus automatic session capture and per-user context injection. Authenticates via OAuth (no baked secret).",
+  "author": {
+    "name": "Voyageur Group",
+    "email": "hello@vg-brain.com"
+  },
+  "homepage": "https://vg-brain.com",
+  "license": "UNLICENSED",
+  "keywords": [
+    "knowledge-management",
+    "rbac",
+    "mcp",
+    "oauth",
+    "audit-log"
+  ]
+}

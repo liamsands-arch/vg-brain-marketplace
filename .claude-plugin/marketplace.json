@@ -1,0 +1,28 @@
+{
+  "name": "vg-brain-marketplace",
+  "description": "Voyageur Group — VG Brain plugin (secret-less, OAuth).",
+  "owner": {
+    "name": "Voyageur Group",
+    "email": "hello@vg-brain.com"
+  },
+  "plugins": [
+    {
+      "name": "vg-brain",
+      "source": "./plugins/vg-brain",
+      "description": "VG Brain — layered company brain: RBAC, audit log, full-text search, automatic session capture + context injection. Authenticates via OAuth (no baked secret).",
+      "author": {
+        "name": "Voyageur Group",
+        "email": "hello@vg-brain.com"
+      },
+      "homepage": "https://vg-brain.com",
+      "license": "UNLICENSED",
+      "keywords": [
+        "knowledge-management",
+        "rbac",
+        "mcp",
+        "oauth",
+        "audit-log"
+      ]
+    }
+  ]
+}

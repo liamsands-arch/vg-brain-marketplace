@@ -1,0 +1,7 @@
+# This repo is PUBLIC and must stay secret-less. Never commit credentials.
+.env
+.env.*
+*.env
+*.plugin
+.mcp.local.json
+node_modules/
