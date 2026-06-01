@@ -1,0 +1,12 @@
+#!/bin/sh
+# VG Brain Mac launcher — picks the right single-arch connection binary by CPU.
+# /bin/sh + uname are macOS built-ins (no install, not Node), so a Node-less
+# user connects with zero install. The selected binary is the bundled
+# self-contained mcp-remote (Bun --compile); it writes the same
+# ~/.mcp-auth/mcp-remote-<version>/ OAuth cache the capture hooks read.
+DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+case "$(uname -m)" in
+  arm64)  exec "$DIR/vg-brain-connect-darwin-arm64" "$@" ;;
+  x86_64) exec "$DIR/vg-brain-connect-darwin-x64"  "$@" ;;
+  *) echo "vg-brain: unsupported macOS arch $(uname -m)" >&2; exit 1 ;;
+esac

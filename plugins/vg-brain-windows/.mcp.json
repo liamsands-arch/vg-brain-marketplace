@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "vg-brain": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/vg-brain-connect-windows-x64.exe",
+      "args": [
+        "https://vg-brain.com/mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "vg-brain-windows",
+  "description": "VG Brain (Windows x64, zero-install): connects with no system Node via a bundled, self-contained mcp-remote .exe (Bun --compile). UNTESTED in a real Cowork install on Windows pending the Mark-of-the-Web / SmartScreen check — do not treat as verified. Windows-arm64 is not covered (falls back to the npx plugin). Same OAuth/RBAC/capture as the cross-platform plugin.",
+  "author": { "name": "Voyageur Group", "email": "hello@vg-brain.com" },
+  "homepage": "https://vg-brain.com",
+  "license": "UNLICENSED",
+  "keywords": ["knowledge-management", "rbac", "mcp", "oauth", "zero-install", "windows"]
+}

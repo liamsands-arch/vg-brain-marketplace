@@ -1,0 +1,8 @@
+{
+  "name": "vg-brain-mac",
+  "description": "VG Brain (macOS, zero-install): connects with no system Node via a bundled, self-contained mcp-remote binary and a /bin/sh arch-selecting shim (Apple Silicon + Intel). Same OAuth, RBAC, audit log, full-text search, draft-by-default writes, and automatic session capture as the cross-platform plugin. Authenticates via OAuth (no baked secret).",
+  "author": { "name": "Voyageur Group", "email": "hello@vg-brain.com" },
+  "homepage": "https://vg-brain.com",
+  "license": "UNLICENSED",
+  "keywords": ["knowledge-management", "rbac", "mcp", "oauth", "zero-install", "macos"]
+}

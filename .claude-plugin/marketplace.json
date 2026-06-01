@@ -1,15 +1,15 @@
 {
   "name": "vg-brain-marketplace",
-  "description": "Voyageur Group — VG Brain plugin (secret-less, OAuth).",
+  "description": "Voyageur Group — VG Brain plugins (secret-less, OAuth). Pick the plugin for your OS: vg-brain-mac (zero-install macOS), vg-brain-windows (zero-install Windows x64), or vg-brain (cross-platform, requires Node — fallback).",
   "owner": {
     "name": "Voyageur Group",
     "email": "hello@vg-brain.com"
   },
   "plugins": [
     {
-      "name": "vg-brain",
-      "source": "./plugins/vg-brain",
-      "description": "VG Brain — layered company brain: RBAC, audit log, full-text search, automatic session capture + context injection. Authenticates via OAuth (no baked secret).",
+      "name": "vg-brain-mac",
+      "source": "./plugins/vg-brain-mac",
+      "description": "VG Brain for macOS — ZERO-INSTALL, no Node needed. Bundled mcp-remote binary + /bin/sh arch shim (Apple Silicon + Intel). RBAC, audit log, full-text search, automatic session capture. OAuth (no baked secret). Recommended for Mac.",
       "author": {
         "name": "Voyageur Group",
         "email": "hello@vg-brain.com"
@@ -21,7 +21,46 @@
         "rbac",
         "mcp",
         "oauth",
-        "audit-log"
+        "zero-install",
+        "macos"
+      ]
+    },
+    {
+      "name": "vg-brain-windows",
+      "source": "./plugins/vg-brain-windows",
+      "description": "VG Brain for Windows x64 — ZERO-INSTALL, no Node needed. Bundled mcp-remote .exe. UNTESTED in Cowork on Windows pending the Mark-of-the-Web / SmartScreen check; not yet verified. Windows-arm64 not covered (use the npx 'vg-brain' fallback). OAuth (no baked secret).",
+      "author": {
+        "name": "Voyageur Group",
+        "email": "hello@vg-brain.com"
+      },
+      "homepage": "https://vg-brain.com",
+      "license": "UNLICENSED",
+      "keywords": [
+        "knowledge-management",
+        "rbac",
+        "mcp",
+        "oauth",
+        "zero-install",
+        "windows"
+      ]
+    },
+    {
+      "name": "vg-brain",
+      "source": "./plugins/vg-brain",
+      "description": "VG Brain — cross-platform FALLBACK. Launches mcp-remote via 'npx', so it REQUIRES Node.js on the machine. Use only if the OS-specific zero-install plugin doesn't fit (e.g. Windows-arm64, or before vg-brain-windows is verified). RBAC, audit log, full-text search, automatic session capture. OAuth (no baked secret).",
+      "author": {
+        "name": "Voyageur Group",
+        "email": "hello@vg-brain.com"
+      },
+      "homepage": "https://vg-brain.com",
+      "license": "UNLICENSED",
+      "keywords": [
+        "knowledge-management",
+        "rbac",
+        "mcp",
+        "oauth",
+        "audit-log",
+        "fallback"
       ]
     }
   ]
